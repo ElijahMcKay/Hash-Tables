@@ -75,7 +75,7 @@ Now if we want to find the value stored for "e", we would first find it's hashed
 
 Note that while searching with a hashed index has ti me complexity of O(1), searching through a linked list has O(n). This is why sparsely populated hash tables have search/insert/delete of O(1), performance will degrade as they fill up and they can have a worst-case performance of O(n) if every single key happens to hash to the same value.
 
-## How do we prevent performance from degrading when the hash table fills up?
+## How do we prevent performance from degrading w hen the hash table fills up?
 
 Due to this performance degradation, most languages, such as Python, will automatically resize the hash table when it reaches a certain capacity. This is done by creating a new hash table (usually doubling in size) and copying each element one-by-one into the new hash table.
 
